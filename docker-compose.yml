@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./volumes/data:/var/lib/mysql
+      - ./volumes/backup:/backup
+    ports:
+      - '3306:3306'
