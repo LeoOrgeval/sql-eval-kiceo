@@ -4,8 +4,10 @@ services:
   mysql:
     image: mysql:8.0
     environment:
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+#      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_DATABASE: eval_kiceo
+#      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./volumes/data:/var/lib/mysql
       - ./volumes/backup:/backup
