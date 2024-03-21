@@ -76,7 +76,7 @@ values
     (1, 8, '07:36:00', 'Lundi');
 
 ############################################################################################
--- QUESTION 5A (5B est dans le fichier queries.sql)
+-- QUESTION 5A (5B est dans le fichier queries.sql (ligne 50)
 -- Mettre à jour l'arrêt 'Petit Tohannic' avec l'arrêt de remplacement 'Delestraint'
 update arrets
 set arret_remplacement = 7  -- ID de 'Delestraint'

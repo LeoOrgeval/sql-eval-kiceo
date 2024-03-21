@@ -28,6 +28,10 @@ where horaires.id_ligne = 1
 group by arrets.nom_arret
 order by min(horaires.heure_depart);
 
+############################################################################################
+-- QUESTION 3
+-- (La question 3 est dans le fichier schema.sql (ligne 34)
+
 
 ############################################################################################
 -- Q4. Parcours de la ligne 2 Direction Kersec avec les horaires et message d'arrêt temporairement non desservi pour Petit Tohannic
@@ -43,7 +47,7 @@ where horaires.jour = 'Lundi'
 order by arrets.id;
 
 ############################################################################################
--- QUESTION 5B (5A est dans le fichier data.sql)
+-- QUESTION 5B (5A est dans le fichier data.sql (ligne 79))
 -- Q5B. Message d'arrêt temporairement non desservi pour Petit Tohannic en concaténant le message avec le nom de l'arrêt de remplacement dynamiquement
 select
     concat('L\'arrêt n\'est pas desservi. Veuillez vous reporter à l\'arrêt ',
@@ -51,6 +55,10 @@ select
 from arrets
 where nom_arret = 'Petit Tohannic'
   and arret_remplacement is not null;
+
+############################################################################################
+-- QUESTION 6
+-- (La question 6 est dans le fichier data.sql (ligne 86))
 
 ############################################################################################
 -- Q7. Afficher le parcours complet des deux lignes dans l'ordre de passage en y mentionnant les arrêts non desservis
@@ -84,7 +92,15 @@ order by
     l.id;
 
 ############################################################################################
--- QUESTION 10B (10A est dans le fichier schema.sql)
+-- QUESTION 8
+-- (La question 8 est dans le fichier README.md (Table des matières > 'Questions sans queries' > Question 8)
+
+############################################################################################
+-- QUESTION 9
+-- (La question 9 est dans le fichier README.md (Table des matières > 'Questions sans queries' > Question 9)
+
+############################################################################################
+-- QUESTION 10B (10A est dans le fichier schema.sql (ligne 45)
 call insert_schedule('06:32:00', '06:41:00', '00:01:00');
 -- Q10B. Appel de la procédure stockée insert_schedule
 select * from schedule;

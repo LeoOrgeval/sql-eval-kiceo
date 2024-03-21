@@ -18,6 +18,8 @@
 
 ## Introduction
 
+(Chaque points dans 'Requêtes' est expliqué dans le fichier `queries.sql` dans l'ordre des questions demandées.)
+
 Ce document sert de guide pour l'installation et l'utilisation du projet SQL pour l'évaluation de Kiceo. Il contient des
 instructions pour l'installation et l'utilisation du projet avec Docker, ainsi que des réponses aux questions données sans utiliser de
 queries, une conception de base de données et un schéma MCD. Le projet est une base de données pour un système de
@@ -33,6 +35,8 @@ créer et de gérer des conteneurs pour la base de données MySQL, assurant une 
 Suivez ces étapes pour démarrer :
 
 Clonez ce dépôt sur votre machine locale.
+
+## Utilisation
 
 ### Démarrage avec Docker
 
@@ -111,7 +115,7 @@ Ils sont déjà dans l'ordre des questions demandées.
 
 ### Question 9 Création d'index sur colonnes
 
-![subtree.png](subtree.png)
+![subtree.png](assets/subtree.png)
 
 Les index de type B-Tree sont particulièrement efficaces po
 ur des opérations de recherche, d'insertion et de suppression qui impliquent
@@ -119,7 +123,7 @@ des tris et des plages de valeurs, car ils permettent d'effectuer des recherches
 logarithmiques qui divisent de manière répétée l'ensemble des données, ce qui conduit rapidement
 à l'emplacement de l'enregistrement souhaité sans parcourir intégralement l'arbre.
 
-![hash.png](hash.png)
+![hash.png](assets/hash.png)
 
 Excellents pour des opérations de recherche rapide, ce type d’index (Hash) permet d'accéder
 directement à l'emplacement de la donnée sans devoir parcourir séquentiellement les enregistrements.
@@ -188,7 +192,7 @@ directement à l'emplacement de la donnée sans devoir parcourir séquentielleme
   `arret_remplacement` peut être NULL, cela indique une relation 1 à 0..1, puisqu'un arrêt peut ou ne peut pas avoir un
   arrêt de remplacement.
 
-![img.png](MCD.png)
+![img.png](assets/MCD.png)
 
 ## Remarques
 

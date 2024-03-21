@@ -42,7 +42,7 @@ alter table arrets
         foreign key (arret_remplacement) references arrets (id);
 
 ############################################################################################
--- QUESTION 10A (10B est dans le fichier queries.sql)
+-- QUESTION 10A (10B est dans le fichier queries.sql (ligne 103))
 -- Création de la table 'schedule' et de la procédure 'insert_schedule'
 create table if not exists schedule
 (

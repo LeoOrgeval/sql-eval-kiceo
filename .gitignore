@@ -1,2 +1,5 @@
 .env
 volumes/*
+.idea
+evaluation-2-projet-sql.pdf
+version-html
